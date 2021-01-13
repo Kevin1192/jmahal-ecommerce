@@ -107,7 +107,9 @@ img {
 .aa-primary-btn span {
   margin-right: 5px;
 }
-
+.jmahal-logo {
+  height: 80px;
+}
 .aa-secondary-btn {
   background-color: #fff;
   font-size: 16px;
@@ -638,11 +640,14 @@ img {
   min-height: auto;
 }
 #menu .menu-area .navbar-default .navbar-nav {
-  display: inline-block;
+  display: flex;
   float: left;
   margin: 0;
   text-align: center;
   width: 100%;
+  justify-content: space-around;
+  height: 80px;
+  align-items: center;
 }
 #menu .menu-area .navbar-default .navbar-nav li a {
   color: #fff;
