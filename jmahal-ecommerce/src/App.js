@@ -3,6 +3,12 @@ import React, {useEffect } from 'react';
 
 // Pages
 import HomePage from './pages/HomePage';
+import ContactPage from './pages/Contact';
+
+//
+import Navbar from './components/Navbar';
+
+
 
 function App() {
   useEffect(() => {
@@ -10,8 +16,10 @@ function App() {
   }, [])
   return (
     <div className="App">
+      <Navbar />
+      <ContactPage />
       <HomePage />
-
+      
     </div>
   );
 }

@@ -41,11 +41,11 @@ function slider() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay:true
+        autoplay:true,
       };
     
     return (
-        <Slider {...settings}>
+        <Slider {...settings} style={{ "margin": "70px 0 0 0"}}>
               <div>
                 <img src={Image1} alt="Men slide img" />
               </div>
