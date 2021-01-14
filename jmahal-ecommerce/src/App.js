@@ -5,8 +5,9 @@ import React, {useEffect } from 'react';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/Contact';
 
-//
+// Components
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 
@@ -19,7 +20,7 @@ function App() {
       <Navbar />
       <ContactPage />
       <HomePage />
-      
+      <Footer />
     </div>
   );
 }

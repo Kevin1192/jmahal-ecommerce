@@ -13,6 +13,7 @@ function ContactPage() {
                 <p>901-468-9593</p>
                 
                 </div>
+
                 <ul class="navbar-nav d-flex flex-row">
                 <li class="nav-item header-icon">
                     <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
