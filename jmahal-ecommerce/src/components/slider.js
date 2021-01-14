@@ -1,21 +1,51 @@
 import React from 'react';
 
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 // images
 import Image1 from '../assets/img/slider/1.webp';
 import Image2 from '../assets/img/slider/2.webp';
 import Image3 from '../assets/img/slider/3.webp';
 import Image4 from '../assets/img/slider/4.webp';
 
+const images = [
+    {
+        image: Image1,
+        caption: 'caption',
+        description: 'Des for 1'
+    },
+    {
+        image: Image2,
+        caption: 'caption',
+        description: 'Des for 1'
+    },
+    {
+        image: Image3,
+        caption: 'caption',
+        description: 'Des for 1'
+    },
+    {
+        image: Image4,
+        caption: 'caption',
+        description: 'Des for 1'
+    }
+]
 function slider() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true
+      };
+    
     return (
-          <section id="aa-slider">
-    <div className="aa-slider-area">
-      <div id="sequence" className="seq">
-        <div className="seq-screen">
-          <ul className="seq-canvas">
-            <li>
+        <Slider {...settings}>
+        <li>
               <div className="seq-model">
-                <img data-seq src={Image1} className='slide-image opacity' alt="Men slide img" />
+                <img data-seq src={Image1} alt="Men slide img" />
               </div>
             </li>
             <li>
@@ -33,15 +63,7 @@ function slider() {
                 <img data-seq src={Image4} alt="Shoes slide img" />
               </div>
             </li>
-          </ul>
-        </div>
-        <fieldset className="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
-          <a type="button" className="seq-prev" aria-label="Previous"><span className="fa fa-angle-left"></span></a>
-          <a type="button" className="seq-next" aria-label="Next"><span className="fa fa-angle-right"></span></a>
-        </fieldset>
-      </div>
-    </div>
-  </section>
+      </Slider>
     )
 }
 
