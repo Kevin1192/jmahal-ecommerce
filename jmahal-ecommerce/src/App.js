@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 // Pages
 import HomePage from './pages/HomePage';
+import ShopPage from './pages/Shop';
 import ContactPage from './pages/Contact';
+
 
 // Components
 import Navbar from './components/Navbar';
@@ -28,7 +30,7 @@ function App() {
           Featured
         </Route>
         <Route path='/shop'>
-          Shop
+          <ShopPage />
         </Route>
         <Route path='/contact'>
       <ContactPage />
