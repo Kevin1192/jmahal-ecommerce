@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // css
 import '../assets/css/Components/navbar.css';
@@ -13,19 +14,19 @@ function Navbar() {
                 <div className='col-md-9'>
             <ul class="navbar-nav mr-auto" id='ul-navbar'>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <Link class="nav-link" to='/home'>Home</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Featured</a>
+                    <Link class="nav-link" to='/featured'>Featured</Link>
                 </li>
                 <li className='nav-item '>
-                <img src={Logo} alt='gold log' id='img-logo'/>
+                <Link to='/home'><img src={Logo} alt='gold log' id='img-logo'/></Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <Link class="nav-link" to='/shop'>Shop</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <Link class="nav-link" to="/contact">Contact</Link>
                 </li>
             </ul>
             </div>

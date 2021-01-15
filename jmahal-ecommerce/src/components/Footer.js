@@ -1,6 +1,8 @@
 import React from 'react'
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
+import '../assets/css/Components/footer.css';
+
 function Footer() {
     return (
         <footer id='contact'>
@@ -41,6 +43,10 @@ function Footer() {
         ></textarea>
         <button type="submit" id="submit-button">Submit</button>
       </form>
+      <br />
+      <span className='made-with-love'>
+    Made with  <i class="fa fa-heart pulse" style={{'color': 'red'}}></i>  by  <a href="http://www.kevinportfolio.com/" target="_blank" className='designer-direct'>Kevin Z</a>
+</span>
       
                     </MDBCol>
                 </MDBRow>

@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, {useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -8,6 +9,7 @@ import ContactPage from './pages/Contact';
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Slider from './components/slider';
 
 
 
@@ -16,12 +18,28 @@ function App() {
       
   }, [])
   return (
-    <div className="App">
+    <Router>
       <Navbar />
+      <Switch>
+        <Route path='/home'>
+          <HomePage />
+        </Route>
+        <Route path='/featured'>
+          Featured
+        </Route>
+        <Route path='/shop'>
+          Shop
+        </Route>
+        <Route path='/contact'>
       <ContactPage />
-      <HomePage />
+      <Slider />
+        </Route>
+        <Route path='/'>
+        <HomePage />
+        </Route>
+      </Switch>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

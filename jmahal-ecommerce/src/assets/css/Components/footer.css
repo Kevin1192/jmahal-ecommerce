@@ -1,0 +1,36 @@
+.made-with-love {
+    color: wheat;
+    word-spacing: 2px;
+}
+
+.made-with-love .fa {
+    color: #E90606;
+    margin: 0 3px;
+    font-size: 14px;
+    animation: pound .35s infinite alternate;
+    -webkit-animation: pound .35s infinite alternate;
+}
+
+@-webkit-keyframes pound{
+    to
+     { transform: scale(1.1) }
+}
+
+
+@keyframes pound {
+    to
+        {transform: scale(1.1)}
+}
+
+.designer-direct {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(-45deg, rgba(228, 5, 198, 0.53), rgb(211, 156, 53));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.designer-direct:hover {
+    transform: scale(0.95) rotate(3deg);
+}
