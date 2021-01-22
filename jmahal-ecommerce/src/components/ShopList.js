@@ -23,7 +23,7 @@ const shoplist = [
 function ShopList() {
     return (
         <div className='container'>
-            shoplist
+            
         </div>
     )
 }
